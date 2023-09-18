@@ -4,10 +4,10 @@ import HomePage from '@/components/home/HomePage'
 
 export default function Home() {
   return (
-    <>
+    <main className="relative h-full w-full">
       <Navbar />
       <HomePage />
       <EducationPage />
-    </>
+    </main>
   )
 }
