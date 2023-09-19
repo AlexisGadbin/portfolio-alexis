@@ -16,21 +16,9 @@ function Experiences() {
         date="2023-2024"
         place="Marquardt, Rietheim, Allemagne (remote)"
       />
-      <Experience
-        title="Développeur web"
-        date="2023-2024"
-        place="Marquardt, Rietheim, Allemagne (remote)"
-      />
-      <Experience
-        title="Développeur web"
-        date="2023-2024"
-        place="Marquardt, Rietheim, Allemagne (remote)"
-      />
-      <Experience
-        title="Développeur web"
-        date="2023-2024"
-        place="Marquardt, Rietheim, Allemagne (remote)"
-      />
+      <Experience title="Stage ingénieur" date="2022-2022" place="Marquardt, Rietheim, Allemagne" />
+      <Experience title="École d'ingénieur" date="2021-2024" place="ESEO, Angers, France" />
+      <Experience title="Classe préparatoire" date="2019-2021" place="ESEO, Angers, France" />
     </div>
   )
 }
