@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import EducationPage from '@/components/education/EducationPage'
 import HomePage from '@/components/home/HomePage'
+import ProjectPage from '@/components/projects/ProjectPage'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HomePage />
       <EducationPage />
+      <ProjectPage />
     </main>
   )
 }
