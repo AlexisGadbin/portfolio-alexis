@@ -1,9 +1,9 @@
 function Experience({ title, date, place }) {
   return (
-    <p className="text-lg font-semibold text-white">
-      <span className="text-xl font-bold text-primary-200">{date}</span> {title}
+    <p className="text-base font-semibold text-white md:text-lg">
+      <span className="text-lg font-bold text-primary-200 md:text-xl">{date}</span> {title}
       <br />
-      <span className="text-lg font-normal text-white opacity-80">{place}</span>
+      <span className="text-sm font-normal text-white opacity-80 md:text-lg">{place}</span>
     </p>
   )
 }
