@@ -4,7 +4,7 @@ import LogoList from './LogoList'
 
 function EducationPage() {
   return (
-    <section className="h-screen bg-primary-950 px-[200px]">
+    <section className="h-screen bg-primary-950 px-[200px]" id="education">
       <Title title="Parcours" />
 
       <div className="mt-20 flex justify-between">

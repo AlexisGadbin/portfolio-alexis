@@ -2,7 +2,10 @@ import Scroller from './Scroller'
 
 function HomePage() {
   return (
-    <section className="relative flex h-[calc(100vh-200px)] items-center justify-center px-[200px]">
+    <section
+      className="relative flex h-[calc(100vh-200px)] items-center justify-center px-[200px]"
+      id="home"
+    >
       <div className="pb-16 text-3xl font-semibold">
         <p className="mb-2">
           Hello, je suis <span className="text-primary">Alexis Gadbin</span>,
