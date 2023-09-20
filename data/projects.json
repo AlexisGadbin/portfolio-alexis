@@ -1,14 +1,26 @@
 [
   {
-    "title": "Portfolio",
-    "description": "Ce projet est le résultat d’un tutoriel youtube afin d’avoir une introduction à threejs et à l’utilisation des modèles 3D sur le web",
-    "image": "/assets/projects/3d-portfolio.png",
-    "tags": ["React", "Threejs", "Tailwind"]
-  },
-  {
     "title": "Sliding puzzle",
     "description": "Ce projet est un mini jeu codé en React qui permet de générer un puzzle à partir d'une photo importée",
     "image": "/assets/projects/sliding-puzzle.png",
     "tags": ["React", "DaisyUi", "Tailwind"]
+  },
+  {
+    "title": "Flexibble",
+    "description": "Ce projet est un clone du site dribbble que j'ai réalisé en suivant une vidéo youtube. Il m'a permis de m'entrainer sur NextJS et TypeScript, de découvrir le cloud pour le stockage des photos et d'utiliser une base de donnée GraphQL",
+    "image": "/assets/projects/flexibble.png",
+    "tags": ["NextJS", "TypeScript", "GraphQL"]
+  },
+  {
+    "title": "Portfolio",
+    "description": "Ce projet est le résultat d’un tutoriel youtube afin d’avoir une introduction à ThreeJS et à l’utilisation des modèles 3D sur le web",
+    "image": "/assets/projects/3d-portfolio.png",
+    "tags": ["React", "ThreeJS", "Tailwind"]
+  },
+  {
+    "title": "Apple clone",
+    "description": "Ce projet est un clone du site du site d'Apple, réalisé en suivant un tutoriel pour m'entrainer sur ThreeJS et GSAP",
+    "image": "/assets/projects/apple.png",
+    "tags": ["React", "ThreeJS", "GSAP"]
   }
 ]

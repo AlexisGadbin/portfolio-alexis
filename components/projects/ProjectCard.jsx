@@ -36,31 +36,54 @@ function DivDescription({ title, description, tags, align = 'left' }) {
 
 function ProjectCard({ title, description, image, tags, align = 'left' }) {
   return (
-    <div
-    // className="relative flex flex-col justify-between md:flex-row md:gap-20"
-    >
-      {align === 'right' ? (
-        <motion.div
-          className="relative flex flex-col justify-between md:flex-row md:gap-20"
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 50 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <DivImage src={image} title={title} />
-          <DivDescription title={title} description={description} tags={tags} align={align} />
-        </motion.div>
-      ) : (
-        <motion.div
-          className="relative flex flex-col justify-between md:flex-row md:gap-20"
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <DivDescription title={title} description={description} tags={tags} />
-          <DivImage src={image} title={title} />
-        </motion.div>
-      )}
-    </div>
+    <>
+      <div className="hidden md:block">
+        {align === 'right' ? (
+          <motion.div
+            className="relative flex flex-col justify-between md:flex-row md:gap-20"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <DivImage src={image} title={title} />
+            <DivDescription title={title} description={description} tags={tags} align={align} />
+          </motion.div>
+        ) : (
+          <motion.div
+            className="relative flex flex-col justify-between md:flex-row md:gap-20"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <DivDescription title={title} description={description} tags={tags} />
+            <DivImage src={image} title={title} />
+          </motion.div>
+        )}
+      </div>
+      <div className="block md:hidden">
+        {align === 'right' ? (
+          <motion.div
+            className="relative flex flex-col justify-between md:flex-row md:gap-20"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <DivImage src={image} title={title} />
+            <DivDescription title={title} description={description} tags={tags} align={align} />
+          </motion.div>
+        ) : (
+          <motion.div
+            className="relative flex flex-col justify-between md:flex-row md:gap-20"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <DivImage src={image} title={title} />
+            <DivDescription title={title} description={description} tags={tags} />
+          </motion.div>
+        )}
+      </div>
+    </>
   )
 }
 
