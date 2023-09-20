@@ -1,28 +1,22 @@
 import Title from '../Title'
 import ProjectCard from './ProjectCard'
+import projects from '@/data/projects.json'
 
 function ProjectPage() {
   return (
     <section className="px-[200px]">
       <Title title="Projets" color="dark" />
       <div className="mt-20 flex w-full flex-col gap-24">
-        <ProjectCard
-          title="Portfolio"
-          description="Ce projet est le résultat d’un tutoriel youtube
-          afin d’avoir une introduction à threejs et à
-          l’utilisation des modèles 3D sur le web"
-          image="/assets/projects/3d-portfolio.png"
-          tags={['React', 'Tailwind', 'Threejs']}
-          align="right"
-        />
-        <ProjectCard
-          title="Portfolio"
-          description="Ce projet est le résultat d’un tutoriel youtube
-          afin d’avoir une introduction à threejs et à
-          l’utilisation des modèles 3D sur le web"
-          image="/assets/projects/3d-portfolio.png"
-          tags={['React', 'Tailwind', 'Threejs']}
-        />
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            tags={project.tags}
+            align={index % 2 === 0 ? 'left' : 'right'}
+          />
+        ))}
       </div>
     </section>
   )

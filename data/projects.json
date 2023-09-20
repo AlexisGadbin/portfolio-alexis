@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Portfolio",
+    "description": "Ce projet est le résultat d’un tutoriel youtube afin d’avoir une introduction à threejs et à l’utilisation des modèles 3D sur le web",
+    "image": "/assets/projects/3d-portfolio.png",
+    "tags": ["React", "Threejs", "Tailwind"]
+  },
+  {
+    "title": "Sliding puzzle",
+    "description": "Ce projet est un mini jeu codé en React qui permet de générer un puzzle à partir d'une photo importée",
+    "image": "/assets/projects/sliding-puzzle.png",
+    "tags": ["React", "DaisyUi", "Tailwind"]
+  }
+]
