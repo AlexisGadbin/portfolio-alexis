@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Lottie from 'lottie-react'
 import { useRef } from 'react'
+import { motion } from 'framer-motion'
 import swipeAnimation from '../../public/assets/animations/swipe-animation.json'
 
 function LogoList() {
@@ -11,7 +12,12 @@ function LogoList() {
 
   return (
     <>
-      <div className="hidden flex-col gap-14 md:flex">
+      <motion.div
+        className="hidden flex-col gap-14 md:flex"
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 120 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <div className="flex gap-10">
           <Image src="/assets/logos/html.svg" height={100} width={100} alt="HTML" />
           <Image src="/assets/logos/css.svg" height={100} width={100} alt="CSS" />
@@ -24,8 +30,13 @@ function LogoList() {
           <Image src="/assets/logos/nextjs.svg" height={100} width={100} alt="NextJS" />
           <Image src="/assets/logos/spring.svg" height={100} width={100} alt="Spring" />
         </div>
-      </div>
-      <div className="relative flex gap-4 overflow-y-hidden overflow-x-scroll pb-4 md:hidden md:pb-0">
+      </motion.div>
+      <motion.div
+        className="relative flex gap-4 overflow-y-hidden overflow-x-scroll pb-4 md:hidden md:pb-0"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <Image src="/assets/logos/html.svg" height={50} width={50} alt="HTML" />
         <Image src="/assets/logos/css.svg" height={50} width={50} alt="CSS" />
         <Image src="/assets/logos/javascript.svg" height={50} width={50} alt="JavaScript" />
@@ -50,7 +61,7 @@ function LogoList() {
         z-50 w-16 -translate-x-[50%]"
           />
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

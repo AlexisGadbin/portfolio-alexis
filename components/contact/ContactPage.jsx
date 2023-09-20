@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { motion } from 'framer-motion'
 import Title from '../Title'
 import TextInput from '../inputs/TextInput'
 import TextArea from '../inputs/TextArea'
@@ -53,9 +54,14 @@ function ContactPage() {
   }
 
   return (
-    <section className="h-screen px-12 md:px-[200px]" id="contact">
+    <section className="h-screen px-12 md:px-[200px] 2xl:px-[400px]" id="contact">
       <Title title="Contact" color="dark" />
-      <div className="flex justify-center">
+      <motion.div
+        className="flex justify-center"
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+      >
         <div>
           <form onSubmit={handleSubmit} className="flex flex-col gap-6 pt-12 md:gap-14">
             <div className="flex flex-col justify-between gap-6 md:flex-row md:gap-28">
@@ -96,7 +102,7 @@ function ContactPage() {
             <Button submit text={loading ? 'Envoi...' : 'Envoi'} />
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

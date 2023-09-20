@@ -2,12 +2,13 @@
 
 import Image from 'next/image'
 import { useMediaQuery } from 'react-responsive'
+import { motion } from 'framer-motion'
 import ProjectTag from './ProjectTag'
 
 function DivImage({ src, title }) {
   return (
-    <div>
-      <Image src={src} alt={title} width={520} height={250} className="md:w-1/2 md:max-w-[50%]" />
+    <div className="md:w-1/2 md:max-w-[50%]">
+      <Image src={src} alt={title} width={520} height={250} />
     </div>
   )
 }
@@ -38,7 +39,12 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
   const isMobile = useMediaQuery({ query: `(max-width: 768px)` })
 
   return (
-    <div className="relative flex flex-col justify-between md:flex-row md:gap-20">
+    <motion.div
+      className="relative flex flex-col justify-between md:flex-row md:gap-20"
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: 500 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       {align === 'right' || isMobile ? (
         <>
           <DivImage src={image} title={title} />
@@ -50,7 +56,7 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
           <DivImage src={image} title={title} />
         </>
       )}
-    </div>
+    </motion.div>
   )
 }
 

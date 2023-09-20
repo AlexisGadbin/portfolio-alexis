@@ -1,10 +1,19 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 function Experience({ title, date, place }) {
   return (
-    <p className="text-base font-semibold text-white md:text-lg">
+    <motion.p
+      className="text-base font-semibold text-white md:text-lg"
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -120 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       <span className="text-lg font-bold text-primary-200 md:text-xl">{date}</span> {title}
       <br />
       <span className="text-sm font-normal text-white opacity-80 md:text-lg">{place}</span>
-    </p>
+    </motion.p>
   )
 }
 
