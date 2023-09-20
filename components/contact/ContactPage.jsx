@@ -57,8 +57,8 @@ function ContactPage() {
       <Title title="Contact" color="dark" />
       <div className="flex justify-center">
         <div>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-14 pt-12">
-            <div className="flex justify-between gap-28">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6 pt-12 md:gap-14">
+            <div className="flex flex-col justify-between gap-6 md:flex-row md:gap-28">
               <TextInput
                 required
                 placeholder="Votre nom"
