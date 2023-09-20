@@ -11,10 +11,17 @@ function Title({ title, color = 'white' }) {
     dark: 'border-dark',
   }
 
+  const backgroundColorMap = {
+    white: 'bg-white',
+    dark: 'bg-dark',
+  }
+
   return (
     <div className="flex items-center gap-4 pt-16">
       <h1 className={`text-[26px] font-bold md:text-5xl ${colorMap[color]}`}>{title}</h1>
-      <div className={`h-[2px] w-[150px] border ${borderColorMap[color]} md:w-[350px]`} />
+      <div
+        className={`h-[2px] w-[150px] border ${borderColorMap[color]} ${backgroundColorMap[color]} md:w-[350px]`}
+      />
     </div>
   )
 }
