@@ -42,7 +42,7 @@ function LogoList() {
               setTimeout(() => {
                 divAnimationRef.current.style.display = 'block'
                 animationRef.current.goToAndPlay(0)
-              }, 3000)
+              }, 2000)
             }}
             loop={false}
             lottieRef={animationRef}
