@@ -3,7 +3,7 @@ import Scroller from './Scroller'
 function HomePage() {
   return (
     <section
-      className="relative flex h-[calc(100vh-200px)] items-center justify-center px-[200px]"
+      className="relative flex h-[calc(100vh-100px)] items-center justify-center px-[200px]"
       id="home"
     >
       <div className="pb-16 text-3xl font-semibold">
