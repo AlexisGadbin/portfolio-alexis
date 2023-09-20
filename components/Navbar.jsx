@@ -33,10 +33,10 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav className="fixed top-0 z-50 flex h-[80px] w-screen items-center justify-between bg-white bg-opacity-90 px-4 md:hidden">
-        <Image src="/logo.svg" height={56} width={62} alt="Alexis Gadbin logo" />
+      <nav className="fixed top-0 z-50 flex h-[60px] w-screen items-center justify-between bg-white bg-opacity-90 px-4 md:hidden">
+        <Image src="/logo.svg" height={42} width={46.5} alt="Alexis Gadbin logo" />
         <button type="button" onClick={() => setIsOpen(true)}>
-          <Image src="/icons/burger.svg" height={30} width={40} alt="Menu" />
+          <Image src="/icons/burger.svg" height={22.5} width={30} alt="Menu" />
         </button>
       </nav>
 
