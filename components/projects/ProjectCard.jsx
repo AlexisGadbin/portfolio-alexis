@@ -6,8 +6,8 @@ import ProjectTag from './ProjectTag'
 
 function DivImage({ src, title }) {
   return (
-    <div className="md:w-1/2 md:max-w-[50%]">
-      <Image src={src} alt={title} width={520} height={250} />
+    <div>
+      <Image src={src} alt={title} width={520} height={250} className="md:w-1/2 md:max-w-[50%]" />
     </div>
   )
 }
