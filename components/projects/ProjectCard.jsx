@@ -42,7 +42,7 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
     <motion.div
       className="relative flex flex-col justify-between md:flex-row md:gap-20"
       whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: 500 }}
+      initial={{ opacity: 0, x: isMobile ? 500 : 100 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       {align === 'right' || isMobile ? (
