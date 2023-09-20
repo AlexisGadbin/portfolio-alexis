@@ -53,7 +53,7 @@ function ContactPage() {
   }
 
   return (
-    <section className="h-screen px-[200px]" id="contact">
+    <section className="h-screen px-12 md:px-[200px]" id="contact">
       <Title title="Contact" color="dark" />
       <div className="flex justify-center">
         <div>
