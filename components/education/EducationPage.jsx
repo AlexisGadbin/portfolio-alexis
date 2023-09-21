@@ -10,7 +10,7 @@ function EducationPage() {
     >
       <Title title="Parcours" />
 
-      <div className="mt-10 flex flex-col justify-between gap-16 md:mt-24 md:flex-row md:gap-0">
+      <div className="mt-10 flex flex-col justify-between gap-16 md:mt-20 md:flex-row md:gap-0">
         <Experiences />
         <LogoList />
       </div>
