@@ -48,5 +48,5 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             cd /home
-            docker service update --image ghcr.io/alexisgadbin/portfolio:${{ github.sha }} portfolio --force --with-registry-auth
+            docker service update --image ghcr.io/alexisgadbin/portfolio:${{ github.sha }} portfolio_client --force --with-registry-auth
 
