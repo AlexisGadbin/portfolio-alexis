@@ -1,10 +1,12 @@
 'use client'
 
-import Image from 'next/image'
-import Lottie from 'lottie-react'
-import { useRef } from 'react'
 import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
+import Image from 'next/image'
+import { useRef } from 'react'
 import swipeAnimation from '../../public/assets/animations/swipe-animation.json'
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
 
 function LogoList() {
   const animationRef = useRef(null)
