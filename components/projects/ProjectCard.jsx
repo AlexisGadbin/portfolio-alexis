@@ -2,12 +2,15 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import ProjectTag from './ProjectTag'
 
-function DivImage({ src, title }) {
+function DivImage({ src, title, url }) {
   return (
     <div className="md:w-1/2 md:max-w-[50%]">
-      <Image src={src} alt={title} width={520} height={250} />
+      <Link href={url} rel="noopener noreferrer" target="_blank">
+        <Image src={src} alt={title} width={520} height={250} />
+      </Link>
     </div>
   )
 }
@@ -34,7 +37,7 @@ function DivDescription({ title, description, tags, align = 'left' }) {
   )
 }
 
-function ProjectCard({ title, description, image, tags, align = 'left' }) {
+function ProjectCard({ title, description, image, tags, url, align = 'left' }) {
   return (
     <>
       <div className="hidden md:block">
@@ -45,7 +48,7 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
             initial={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <DivImage src={image} title={title} />
+            <DivImage src={image} title={title} url={url} />
             <DivDescription title={title} description={description} tags={tags} align={align} />
           </motion.div>
         ) : (
@@ -56,7 +59,7 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <DivDescription title={title} description={description} tags={tags} />
-            <DivImage src={image} title={title} />
+            <DivImage src={image} title={title} url={url} />
           </motion.div>
         )}
       </div>
@@ -68,7 +71,7 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
             initial={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <DivImage src={image} title={title} />
+            <DivImage src={image} title={title} url={url} />
             <DivDescription title={title} description={description} tags={tags} align={align} />
           </motion.div>
         ) : (
@@ -78,7 +81,7 @@ function ProjectCard({ title, description, image, tags, align = 'left' }) {
             initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <DivImage src={image} title={title} />
+            <DivImage src={image} title={title} url={url} />
             <DivDescription title={title} description={description} tags={tags} />
           </motion.div>
         )}

@@ -14,6 +14,7 @@ function ProjectPage() {
             description={project.description}
             image={project.image}
             tags={project.tags}
+            url={project.url}
             align={index % 2 === 0 ? 'left' : 'right'}
           />
         ))}
