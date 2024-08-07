@@ -1,12 +1,12 @@
 'use client'
 
-import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import Title from '../Title'
-import TextInput from '../inputs/TextInput'
-import TextArea from '../inputs/TextArea'
 import Button from '../inputs/Button'
+import TextArea from '../inputs/TextArea'
+import TextInput from '../inputs/TextInput'
 
 function ContactPage() {
   const [contact, setContact] = useState({
@@ -22,8 +22,8 @@ function ContactPage() {
 
     emailjs
       .send(
-        'service_7hrdufj',
-        'template_i0jnrh4',
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: contact.name,
           from_email: contact.email,
@@ -31,7 +31,7 @@ function ContactPage() {
           to_email: 'alexis@gadbin.com',
           to_name: 'Alexis',
         },
-        'zJ21q4M9eCy7yhkH-'
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
