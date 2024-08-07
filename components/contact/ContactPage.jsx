@@ -42,8 +42,9 @@ function ContactPage() {
             message: '',
           })
         },
-        () => {
+        (error) => {
           setLoading(false)
+          console.log(error)
 
           // eslint-disable-next-line no-alert
           alert(
