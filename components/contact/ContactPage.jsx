@@ -20,6 +20,9 @@ function ContactPage() {
     e.preventDefault()
     setLoading(true)
 
+    console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID)
+    console.log(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
+
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
