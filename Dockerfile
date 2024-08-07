@@ -38,7 +38,18 @@ RUN \
 FROM base AS runner
 WORKDIR /app
 
+
+# Define build arguments to pass secrets
+ARG EMAILJS_SERVICE_ID
+ARG EMAILJS_TEMPLATE_ID
+ARG EMAILJS_PUBLIC_KEY
+
 ENV NODE_ENV production
+# Set environment variables using build arguments
+ENV NEXT_PUBLIC_EMAILJS_SERVICE_ID=${EMAILJS_SERVICE_ID}
+ENV NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${EMAILJS_TEMPLATE_ID}
+ENV NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${EMAILJS_PUBLIC_KEY}
+
 # Uncomment the following line in case you want to disable telemetry during runtime.
 # ENV NEXT_TELEMETRY_DISABLED 1
 

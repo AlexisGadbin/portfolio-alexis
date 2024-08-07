@@ -20,9 +20,6 @@ function ContactPage() {
     e.preventDefault()
     setLoading(true)
 
-    console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID)
-    console.log(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
-
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -45,9 +42,8 @@ function ContactPage() {
             message: '',
           })
         },
-        (error) => {
+        () => {
           setLoading(false)
-          console.log(error)
 
           // eslint-disable-next-line no-alert
           alert(

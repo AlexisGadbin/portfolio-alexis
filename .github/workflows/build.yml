@@ -38,6 +38,10 @@ jobs:
         with:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.REGISTRY }}/alexisgadbin/portfolio:${{ github.sha }}
+          build-args: |
+            EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+            EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+            EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
 
       - name: Deploy the new image
         uses: appleboy/ssh-action@master
