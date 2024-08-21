@@ -1,7 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import ProjectTag from './ProjectTag'
 
@@ -30,7 +30,7 @@ function DivDescription({ title, description, tags, align = 'left' }) {
           <ProjectTag key={t} tag={t} />
         ))}
       </div>
-      <p className="my-2 text-justify text-xs font-normal md:my-0 md:mt-5 md:text-base">
+      <p className="my-2 whitespace-pre-line text-justify text-xs font-normal md:my-0 md:mt-5 md:text-base">
         {description}
       </p>
     </div>
