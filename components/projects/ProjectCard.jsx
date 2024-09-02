@@ -7,9 +7,15 @@ import ProjectTag from './ProjectTag'
 
 function DivImage({ src, title, url }) {
   return (
-    <div className="md:w-1/2 md:max-w-[50%]">
+    <div>
       <Link href={url} rel="noopener noreferrer" target="_blank">
-        <Image src={src} alt={title} width={520} height={250} />
+        <Image
+          src={src}
+          alt={title}
+          width={520}
+          height={250}
+          className="h-full w-full object-contain"
+        />
       </Link>
     </div>
   )
@@ -30,7 +36,7 @@ function DivDescription({ title, description, tags, align = 'left' }) {
           <ProjectTag key={t} tag={t} />
         ))}
       </div>
-      <p className="my-2 whitespace-pre-line text-justify text-xs font-normal md:my-0 md:mt-5 md:text-base">
+      <p className="my-2 whitespace-pre-line text-justify text-xs font-normal md:my-0 md:mt-5 lg:text-sm xl:text-base">
         {description}
       </p>
     </div>

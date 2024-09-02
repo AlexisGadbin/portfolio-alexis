@@ -5,7 +5,7 @@ import LogoList from './LogoList'
 function EducationPage() {
   return (
     <section
-      className="bg-primary-950 px-12 md:h-screen md:px-[200px] 2xl:px-[400px]"
+      className="bg-primary-950 px-12 md:h-screen md:px-[75px] lg:px-[100px] xl:px-[200px] 2xl:px-[400px]"
       id="education"
     >
       <Title title="Parcours" />

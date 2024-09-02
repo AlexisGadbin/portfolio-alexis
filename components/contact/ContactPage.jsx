@@ -54,7 +54,10 @@ function ContactPage() {
   }
 
   return (
-    <section className="h-screen px-12 md:px-[200px] 2xl:px-[400px]" id="contact">
+    <section
+      className="h-screen px-12 md:px-[75px] lg:px-[100px] xl:px-[200px] 2xl:px-[400px]"
+      id="contact"
+    >
       <Title title="Contact" color="dark" />
       <motion.div
         className="flex justify-center"
