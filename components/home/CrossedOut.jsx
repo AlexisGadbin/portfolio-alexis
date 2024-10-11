@@ -15,7 +15,7 @@ function CrossedOut({ className }) {
       newPath.style.strokeDasharray = length
       newPath.style.strokeDashoffset = length
       newPath.style.animation = 'dash 0.2s linear forwards'
-      newPath.style.animationDelay = `${index * 0.2}s`
+      newPath.style.animationDelay = `${index * 0.2 + 1}s`
     })
   }, [])
 
