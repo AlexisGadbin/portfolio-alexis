@@ -6,3 +6,9 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
