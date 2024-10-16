@@ -12,10 +12,10 @@ function HomePage() {
           Hello, je suis <span className="text-primary">Alexis Gadbin</span>,
         </p>
         <p className="mt-2 whitespace-nowrap">
-          <div className="relative inline-flex">
+          <span className="relative inline-flex">
             Étudiant
-            <CrossedOut className="absolute left-1/2 h-auto w-full -translate-x-1/2 translate-y-2 animate-dash" />
-          </div>
+            <CrossedOut className="animate-dash absolute left-1/2 h-auto w-full -translate-x-1/2 translate-y-2" />
+          </span>
           &nbsp; passioné de développement web
         </p>
       </div>
