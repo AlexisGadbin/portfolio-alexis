@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
 
 env:
   REGISTRY: ghcr.io
@@ -53,4 +56,3 @@ jobs:
           script: |
             cd /home
             docker service update --image ghcr.io/alexisgadbin/portfolio:${{ github.sha }} portfolio_client --force --with-registry-auth
-
