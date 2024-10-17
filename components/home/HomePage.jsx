@@ -16,7 +16,7 @@ function HomePage() {
             Étudiant
             <CrossedOut className="animate-dash absolute left-1/2 h-auto w-full -translate-x-1/2 translate-y-2" />
           </span>
-          &nbsp; passioné de développement web
+          &nbsp; passionné de développement web
         </p>
       </div>
       <div className="absolute bottom-20">
