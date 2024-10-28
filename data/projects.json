@@ -1,5 +1,12 @@
 [
   {
+    "title": "Smoothie",
+    "description": "Smoothie est une PWA qui permet d'enregistrer ses recettes de smoothies préférées  et d'en calculer les valeurs nutritionnelles. \n L'application est hébergée sur le même VPS que Bookster et ce portfolio. \n Le développement du projet est encore en cours !",
+    "image": "/assets/projects/smoothie.png",
+    "tags": ["Vue.js", "PWA", "AdonisJS", "NodeJS"],
+    "url": "https://smoothie.alaikssi.com/"
+  },
+  {
     "title": "Bookster",
     "description": "Il s'agit d'une application simple pour gérer les livres que l'on a lus, ou que l'on souhaite lire. \n Elle me sert également de bac à sable, et j'ai pu y tester de nombreuses technologies, comme AWS pour le stockage des photos, Docker Swarm & Traefik pour le déploiement sur un VPS, ou encore GitHub Actions pour l'intégration continue",
     "image": "/assets/projects/bookster.png",
@@ -12,13 +19,6 @@
     "image": "/assets/projects/sliding-puzzle.png",
     "tags": ["React", "DaisyUi", "Tailwind"],
     "url": "https://sliding-puzzle-alexis.vercel.app/"
-  },
-  {
-    "title": "Flexibble",
-    "description": "Ce projet est un clone du site dribbble que j'ai réalisé en suivant une vidéo youtube. Il m'a permis de m'entrainer sur NextJS et TypeScript, de découvrir le cloud pour le stockage des photos et d'utiliser une base de donnée GraphQL",
-    "image": "/assets/projects/flexibble.png",
-    "tags": ["NextJS", "TypeScript", "GraphQL"],
-    "url": "https://flexibble-seven-delta.vercel.app/"
   },
   {
     "title": "Portfolio",
