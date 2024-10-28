@@ -27,6 +27,19 @@ module.exports = {
       screens: {
         '2xl': '1840px',
       },
+      keyframes: {
+        'move-left': {
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
+          },
+        },
+      },
+      animation: {
+        'move-left': 'move-left 1s linear infinite',
+      },
     },
   },
   plugins: [],
