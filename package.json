@@ -10,11 +10,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@emailjs/browser": "^3.12.1",
-    "autoprefixer": "10.4.15",
-    "eslint-config-next": "^13.5.7",
-    "eslint-config-prettier": "^9.1.0",
-    "framer-motion": "^10.18.0",
+    "@emailjs/browser": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "eslint-config-next": "^15.3.2",
+    "eslint-config-prettier": "^10.1.5",
+    "framer-motion": "^12.12.1",
     "lottie-react": "^2.4.0",
     "next": "^14.2.15",
     "portfolio": "file:",
@@ -30,6 +30,6 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^4.6.2"
+    "eslint-plugin-react-hooks": "^5.2.0"
   }
 }
