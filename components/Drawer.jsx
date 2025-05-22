@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Drawer({ isOpen, setIsOpen }) {
   return (
     <section
-      className={`fixed right-0 z-[999] flex h-screen flex-col items-center justify-center overflow-hidden bg-white transition-all ${
+      className={`fixed right-0 z-999 flex h-screen flex-col items-center justify-center overflow-hidden bg-white transition-all ${
         isOpen ? 'w-screen' : 'w-0'
       }`}
     >

@@ -1,6 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-primary-50: #f1fcf8;
+  --color-primary-100: #d1f6eb;
+  --color-primary-200: #a2edda;
+  --color-primary-300: #6bddc3;
+  --color-primary-400: #3dc4a9;
+  --color-primary-500: #22a089;
+  --color-primary-600: #1a8775;
+  --color-primary-700: #196c60;
+  --color-primary-800: #18574e;
+  --color-primary-900: #194842;
+  --color-primary-950: #082b27;
+  --color-primary: #22a089;
+
+  --color-dark: #121212;
+
+  --breakpoint-2xl: 1840px;
+
+  --animate-move-left: move-left 1s linear infinite;
+
+  @keyframes move-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 * {
   font-family: 'Poppins', sans-serif;
