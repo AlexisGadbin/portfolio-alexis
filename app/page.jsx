@@ -6,7 +6,7 @@ import ProjectPage from '@/components/projects/ProjectPage'
 
 export default function Home() {
   return (
-    <main className="relative h-full w-full scroll-smooth">
+    <main className="relative h-full w-full overflow-x-hidden scroll-smooth">
       <Navbar />
       <HomePage />
       <EducationPage />
@@ -15,3 +15,4 @@ export default function Home() {
     </main>
   )
 }
+
