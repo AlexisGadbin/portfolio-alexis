@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - master
+      - v1
 
 env:
   REGISTRY: ghcr.io
@@ -37,7 +37,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ env.REGISTRY }}/alexisgadbin/portfolio:${{ github.sha }}
+          tags: ${{ env.REGISTRY }}/alexisgadbin/portfolio-v1:${{ github.sha }}
           build-args: |
             EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}
             EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}
@@ -51,5 +51,5 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd /home
-            docker service update --image ghcr.io/alexisgadbin/portfolio:${{ github.sha }} portfolio_client --force --with-registry-auth
+            docker service update --image ghcr.io/alexisgadbin/portfolio-v1:${{ github.sha }} portfolio_client_v1 --force --with-registry-auth
 
