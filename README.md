@@ -1,5 +1,5 @@
 Portolio personnel de Alexis Gadbin
 
-V1.0
+V2.0
 
 [Lien vers la prod](https://alaikssi.com)
