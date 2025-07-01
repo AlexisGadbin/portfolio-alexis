@@ -1,37 +1,41 @@
 [
   {
-    "title": "Smoothie",
-    "description": "Smoothie est une PWA qui permet d'enregistrer ses recettes de smoothies préférées  et d'en calculer les valeurs nutritionnelles. \n L'application est hébergée sur le même VPS que Bookster et ce portfolio. \n Le développement du projet est encore en cours !",
-    "image": "/assets/projects/smoothie.png",
-    "tags": ["Vue.js", "PWA", "AdonisJS", "NodeJS"],
-    "url": "https://smoothie.alaikssi.com/"
+    "title": "Sizy",
+    "description": "Sizy est une application mobile qui permet d'enregistrer ses mensurations, ses tailles de vêtements ou de bijoux, et de les partager avec ses amis. \n J'ai développé l'application en SwiftUI, avec un backend Supabase avec PostgREST. \n L'application est disponible sur iOS.",
+    "image": "/assets/projects/sizy.png",
+    "tags": ["SwiftUI", "Supabase", "PostgreSQL"],
+    "url": "https://apps.apple.com/fr/app/sizy/id6744871405"
+  },
+  {
+    "title": "LumonOS",
+    "description": "LumonOS est un OS mobile inspiré de la série Severance, imaginé par BastiUI dans sa vidéo YouTube. \n J'ai intégré sa maquette Figma en React Native, et la démo est disponible sur Android et iOS.",
+    "image": "/assets/projects/lumonos.png",
+    "tags": ["React Native", "Reanimated", "Expo", "TypeScript"],
+    "url": "https://testflight.apple.com/join/2SYdHVGg",
+    "githubUrl": "https://github.com/AlexisGadbin/LumonOS"
   },
   {
     "title": "Bookster",
     "description": "Il s'agit d'une application simple pour gérer les livres que l'on a lus, ou que l'on souhaite lire. \n Elle me sert également de bac à sable, et j'ai pu y tester de nombreuses technologies, comme AWS pour le stockage des photos, Docker Swarm & Traefik pour le déploiement sur un VPS, ou encore GitHub Actions pour l'intégration continue",
     "image": "/assets/projects/bookster.png",
-    "tags": ["React", "Tailwind", "AdonisJS", "NodeJS", "AWS"],
+    "tags": ["SwiftUI", "AdonisJS", "NodeJS", "AWS", "PostgreSQL"],
     "url": "https://bookster.alaikssi.com/"
+  },
+  {
+    "title": "Smoothie",
+    "description": "Smoothie est une PWA qui permet d'enregistrer ses recettes de smoothies préférées  et d'en calculer les valeurs nutritionnelles. \n L'application est hébergée sur le même VPS que Bookster et ce portfolio. \n Le développement du projet est encore en cours !",
+    "image": "/assets/projects/smoothie.png",
+    "tags": ["Vue.js", "PWA", "AdonisJS", "NodeJS"],
+    "url": "https://smoothie.alaikssi.com/",
+    "githubUrl": "https://github.com/AlexisGadbin/smoothie-pwa"
   },
   {
     "title": "Sliding puzzle",
     "description": "Ce projet est un mini jeu codé en React qui permet de générer un puzzle à partir d'une photo importée",
     "image": "/assets/projects/sliding-puzzle.png",
     "tags": ["React", "DaisyUi", "Tailwind"],
-    "url": "https://sliding-puzzle-alexis.vercel.app/"
-  },
-  {
-    "title": "Portfolio",
-    "description": "Ce projet est le résultat d’un tutoriel youtube afin d’avoir une introduction à ThreeJS et à l’utilisation des modèles 3D sur le web",
-    "image": "/assets/projects/3d-portfolio.png",
-    "tags": ["React", "ThreeJS", "Tailwind"],
-    "url": "https://3d-portfolio-tuto.vercel.app//"
-  },
-  {
-    "title": "Apple clone",
-    "description": "Ce projet est un clone du site du site d'Apple, réalisé en suivant un tutoriel pour m'entrainer sur ThreeJS et GSAP",
-    "image": "/assets/projects/apple.png",
-    "tags": ["React", "ThreeJS", "GSAP"],
-    "url": "https://apple-clone-peach-sigma.vercel.app/"
+    "url": "https://sliding-puzzle-alexis.vercel.app/",
+    "githubUrl": "https://github.com/AlexisGadbin/sliding-puzzle"
   }
 ]
+

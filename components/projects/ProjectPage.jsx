@@ -18,6 +18,7 @@ function ProjectPage() {
             image={project.image}
             tags={project.tags}
             url={project.url}
+            githubUrl={project.githubUrl}
             align={index % 2 === 0 ? 'left' : 'right'}
           />
         ))}
@@ -27,3 +28,4 @@ function ProjectPage() {
 }
 
 export default ProjectPage
+
