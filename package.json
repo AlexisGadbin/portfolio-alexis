@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -33,3 +33,4 @@
     "eslint-plugin-react-hooks": "^5.2.0"
   }
 }
+
