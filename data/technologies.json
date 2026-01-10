@@ -1,0 +1,51 @@
+[
+  {
+    "id": "swift",
+    "name": "Swift",
+    "color": "#F05138",
+    "iconPath": "/assets/logos/swift.svg"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "color": "#61DAFB",
+    "iconPath": "/assets/logos/react.svg"
+  },
+  {
+    "id": "expo",
+    "name": "Expo",
+    "color": "#000020",
+    "iconPath": "/assets/logos/expo.svg"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "color": "#3178C6",
+    "iconPath": "/assets/logos/typescript.svg"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "color": "#000000",
+    "iconPath": "/assets/logos/nextjs.svg"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "color": "#339933",
+    "iconPath": "/assets/logos/nodejs.svg"
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "color": "#3ECF8E",
+    "iconPath": "/assets/logos/supabase.svg"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "color": "#4169E1",
+    "iconPath": "/assets/logos/postgresql.svg"
+  }
+]
+

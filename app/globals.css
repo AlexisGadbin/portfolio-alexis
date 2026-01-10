@@ -15,29 +15,8 @@
   --color-primary: #22a089;
 
   --color-dark: #121212;
-
-  --breakpoint-2xl: 1840px;
-
-  --animate-move-left: move-left 1s linear infinite;
-
-  @keyframes move-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -50,11 +29,13 @@
 
 * {
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
+/* Glassmorphism */
+.glass-card {
+  background: rgba(34, 160, 137, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(34, 160, 137, 0.2);
+  border-radius: 20px;
 }

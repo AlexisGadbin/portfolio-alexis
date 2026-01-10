@@ -1,0 +1,80 @@
+[
+  {
+    "id": "sizy",
+    "name": "Sizy",
+    "tagline": "Vos mensurations, simplifiees",
+    "description": "Enregistrez vos mensurations et tailles de vetements, partagez-les facilement avec vos proches.",
+    "tech": ["SwiftUI", "Supabase", "PostgreSQL"],
+    "appStoreUrl": "https://apps.apple.com/fr/app/sizy/id6744871405",
+    "githubUrl": null,
+    "color": "#FF6B6B",
+    "iconPath": "/assets/apps/sizy/icon.png",
+    "screenshots": [
+      "/assets/apps/sizy/screenshots/1.png",
+      "/assets/apps/sizy/screenshots/2.png"
+    ]
+  },
+  {
+    "id": "lumonos",
+    "name": "LumonOS",
+    "tagline": "Inspire par Severance",
+    "description": "OS mobile inspire de la serie Severance, integre en React Native depuis une maquette Figma de BastiUI.",
+    "tech": ["React Native", "Expo", "TypeScript", "Reanimated"],
+    "appStoreUrl": "https://testflight.apple.com/join/2SYdHVGg",
+    "githubUrl": "https://github.com/AlexisGadbin/LumonOS",
+    "color": "#4ECDC4",
+    "iconPath": "/assets/apps/lumonos/icon.png",
+    "screenshots": [
+      "/assets/apps/lumonos/screenshots/1.png",
+      "/assets/apps/lumonos/screenshots/2.png"
+    ]
+  },
+  {
+    "id": "bookster",
+    "name": "Bookster",
+    "tagline": "Gerez vos lectures",
+    "description": "Application pour suivre ses livres lus et a lire. Mon bac a sable pour tester AWS, Docker Swarm, et GitHub Actions.",
+    "tech": ["SwiftUI", "AdonisJS", "PostgreSQL", "AWS"],
+    "appStoreUrl": null,
+    "url": "https://bookster.alaikssi.com/",
+    "githubUrl": null,
+    "color": "#FFE66D",
+    "iconPath": "/assets/apps/bookster/icon.png",
+    "screenshots": [
+      "/assets/apps/bookster/screenshots/1.png",
+      "/assets/apps/bookster/screenshots/2.png"
+    ]
+  },
+  {
+    "id": "mydayinmusic",
+    "name": "My Day in Music",
+    "tagline": "Votre historique Spotify",
+    "description": "Visualisez votre historique d'ecoute Spotify de maniere unique et decouvrez vos tendances musicales.",
+    "tech": ["SwiftUI", "Spotify API"],
+    "appStoreUrl": null,
+    "testflightUrl": null,
+    "githubUrl": null,
+    "color": "#1DB954",
+    "iconPath": "/assets/apps/mydayinmusic/icon.png",
+    "screenshots": [
+      "/assets/apps/mydayinmusic/screenshots/1.png",
+      "/assets/apps/mydayinmusic/screenshots/2.png"
+    ]
+  },
+  {
+    "id": "renewly",
+    "name": "Renewly",
+    "tagline": "Tracker de taches quotidiennes",
+    "description": "Suivez vos habitudes et taches du quotidien avec une interface simple et intuitive.",
+    "tech": ["SwiftUI"],
+    "appStoreUrl": null,
+    "testflightUrl": null,
+    "githubUrl": null,
+    "color": "#8B5CF6",
+    "iconPath": "/assets/apps/renewly/icon.png",
+    "screenshots": [
+      "/assets/apps/renewly/screenshots/1.png",
+      "/assets/apps/renewly/screenshots/2.png"
+    ]
+  }
+]

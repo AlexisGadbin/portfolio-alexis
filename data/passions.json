@@ -1,0 +1,16 @@
+[
+  {
+    "id": "running",
+    "name": "Running",
+    "description": "Marathon, trails et courses en tout genre",
+    "color": "#FF6B35",
+    "iconPath": "/assets/passions/running.png"
+  },
+  {
+    "id": "chess",
+    "name": "Echecs",
+    "description": "Joueur passionné depuis plusieurs années",
+    "color": "#1E1E1E",
+    "iconPath": "/assets/passions/chess.png"
+  }
+]
