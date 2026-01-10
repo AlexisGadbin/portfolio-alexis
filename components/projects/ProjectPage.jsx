@@ -16,9 +16,11 @@ function ProjectPage() {
             title={project.title}
             description={project.description}
             image={project.image}
+            icon={project.icon}
             tags={project.tags}
             url={project.url}
             githubUrl={project.githubUrl}
+            beta={project.beta}
             align={index % 2 === 0 ? 'left' : 'right'}
           />
         ))}
